@@ -14,3 +14,16 @@ a {
 * {
   box-sizing: border-box;
 }
+.mainTitle{
+  margin-top: 200px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 63px;
+  font-family: sans-serif;
+  color: #0884C7;
+}
+.subTitle{
+  font-weight: 300;
+  font-size: 36px;
+  color: #003957;
+}
