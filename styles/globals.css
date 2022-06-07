@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -14,16 +13,65 @@ a {
 * {
   box-sizing: border-box;
 }
-.mainTitle{
+.titleContainer {
   margin-top: 200px;
+  box-sizing: border-box;
+}
+.mainTitle {
   font-weight: 700;
   font-size: 50px;
   line-height: 63px;
   font-family: sans-serif;
-  color: #0884C7;
+  color: #0884c7;
 }
-.subTitle{
+@media (max-width: 992px) {
+  .titleContainer {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.445);
+    border-radius: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .titleContainer {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 520px) {
+  .mainTitle {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .subTitle {
+    font-size: 25px !important;
+  }
+}
+
+.subTitle {
   font-weight: 300;
   font-size: 36px;
   color: #003957;
+}
+.dropdown-toggle {
+  background: #0039571f !important;
+  border: none !important;
+  font-size: 20px !important;
+  box-shadow: none !important;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+/* style={{position:"absolute",right:"0px",top:"0px",height:"auto",width:"1300px",zIndex:"-1000"}} */
+.bgSvg {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: auto;
+  width: 1300px;
+  z-index: -1000;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .bgSvg {
+    width: 1000px;
+  }
 }

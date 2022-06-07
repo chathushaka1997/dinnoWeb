@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Script from "next/script";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -9,9 +10,10 @@ export default function Home() {
         <title>Dinno</title>
         <meta name="Dinno solutions" content="Dinno software solutions" />
         <link rel="icon" href="/favicon.ico" />
+       
       </Head>
       <div className="container">
-        <div className="ms-5">
+        <div className="ms-0 ms-md-5 titleContainer">
           <h1 className="mainTitle">
             Creative Experts <br /> at Work
           </h1>

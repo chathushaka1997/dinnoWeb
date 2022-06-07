@@ -10,12 +10,15 @@ const Layout = ({ children }) => {
     autoplay: true,
     animationData: animationData,
     renderer: "svg",
-    isClickToPauseDisabled:true
+    isClickToPauseDisabled: true,
   };
   return (
     <div>
       <Navbar />
-      <Lottie options={defaultOptions}  style={{position:"absolute",right:"0px",top:"0px",height:"auto",width:"1300px",zIndex:"-1000"}}/>
+      <div className="bgSvg">
+        <Lottie options={defaultOptions} />
+      </div>
+
       {children}
       <Footer />
     </div>
